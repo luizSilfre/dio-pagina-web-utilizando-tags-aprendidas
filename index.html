@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio 01 - Introdução ao HTML na prática!</title>
+  </head>
+
+  <body>
+    <h1 id="sessoes">Sessões da página</h1>
+
+    <nav>
+      <ul>
+        <li><a href="#ferramentas">Ferramentas</a></li>
+        <li><a href="#inspetor">Inspetor de Elementos</a></li>
+        <li><a href="#estrutura">Estrutura Básica do HTML</a></li>
+        <li><a href="#tags">Tags</a></li>
+        <li><a href="#atributos">Atributos das Tags</a></li>
+        <li><a href="#textos">Textos no HTML</a></li>
+        <li><a href="#listas">Listas Ordenadas e Não Ordenadas</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#extras">Extras do Desafio (tags não utilizadas no texto)</a></li>
+      </ul>
+    </nav>
+
+    <hr />
+
+    <h1>Introdução ao HTML na Prática</h1>
+
+    <h2 id="ferramentas">Ferramentas</h2>
+    <p>
+      Para começar essa jornada no desenvolvimento web, o instrutor
+      <strong>Diogo Mainardes</strong> apresentou a instalação do <strong>VSCode</strong> e da extensão <strong>Live Server</strong>.
+    </p>
+    <p>
+      Optei por utilizar o <strong>Live Preview</strong>, pois já havia trabalhado com essa extensão anteriormente. Na prática, ambas cumprem a mesma função: permitir que visualizemos as alterações no HTML em tempo real no navegador, agilizando o
+      desenvolvimento.
+    </p>
+    <a href="#sessoes">voltar ao topo</a>
+
+    <hr />
+
+    <h2 id="inspetor">Inspetor de Elementos</h2>
+    <p>O Inspetor de Elementos é uma ferramenta presente em todos os navegadores modernos.</p>
+    <p>Ele permite:</p>
+    <ol>
+      <li>Visualizar a estrutura HTML da página;</li>
+      <li>Testar alterações em tempo real;</li>
+      <li>Identificar problemas de layout;</li>
+      <li>Experimentar estilos CSS sem alterar o código original.</li>
+    </ol>
+    <p>Essa ferramenta é extremamente útil para entender como uma página foi construída e para corrigir erros com mais rapidez.</p>
+    <a href="#sessoes">voltar ao topo</a>
+
+    <hr />
+
+    <h2 id="estrutura">Estrutura Básica do HTML</h2>
+    <p>De forma simples, uma página HTML é composta por três grandes blocos:</p>
+    <ol>
+      <li>
+        <strong><mark>&lt;html&gt;</mark></strong
+        >: Define que o arquivo é um documento HTML;
+      </li>
+      <li>
+        <strong><mark>&lt;head&gt;</mark></strong
+        >: Contém informações e configurações da página;
+      </li>
+      <li>
+        <strong><mark>&lt;body&gt;</mark></strong
+        >: Contém todo o conteúdo visível para o usuário.
+      </li>
+    </ol>
+    <p>
+      Por convenção, a página principal se chama <strong><i>index.html</i></strong
+      >.
+    </p>
+    <p>
+      Dentro da tag <strong><mark>&lt;head&gt;</mark></strong
+      >, encontramos por exemplo a tag <strong><mark>&lt;title&gt;</mark></strong
+      >, que define o título da página exibido na aba do navegador.
+    </p>
+    <p>
+      Já a tag <strong><mark>&lt;body&gt;</mark></strong> é onde construímos o conteúdo real da página: títulos, textos, listas, links, imagens e muito mais.
+    </p>
+    <a href="#sessoes">voltar ao topo</a>
+
+    <hr />
+
+    <h2 id="tags">Tags</h2>
+    <p>As tags são os elementos que estruturam e organizam o conteúdo de uma página.</p>
+    <p>A maioria delas funciona em pares:</p>
+    <ul>
+      <li>
+        <strong><mark>&lt;i&gt;</mark></strong>
+        <i>Texto em itálico</i>
+        <strong><mark>&lt;/i&gt;</mark></strong>
+      </li>
+      <li>
+        <strong><mark>&lt;strong&gt;</mark></strong>
+        <strong>Texto em negrito</strong>
+        <strong><mark>&lt;/strong&gt;</mark></strong>
+      </li>
+    </ul>
+    <p>
+      Abrimos a tag e depois a fechamos com
+      <strong><mark>&lt;/...&gt;</mark></strong
+      >.
+    </p>
+    <p>Existem também tags que não precisam de fechamento, como:</p>
+    <ul>
+      <li>
+        <strong><mark>&lt;input type="text" /&gt;</mark></strong>
+      </li>
+      <li>
+        <strong><mark>&lt;img src="imagem.jpg" /&gt;</mark></strong>
+      </li>
+    </ul>
+    <p>Essas são chamadas de tags auto-fechadas.</p>
+    <a href="#sessoes">voltar ao topo</a>
+
+    <hr />
+
+    <h2 id="atributos">Atributos das Tags</h2>
+    <p>As tags podem receber atributos, que são propriedades que modificam seu comportamento.</p>
+    <p>Alguns atributos são globais, como:</p>
+    <ul>
+      <li>
+        <strong><mark>id</mark></strong
+        >: Identificador único do elemento;
+      </li>
+      <li>
+        <strong><mark>style</mark></strong
+        >: Define estilo CSS inline.
+      </li>
+    </ul>
+    <p>Exemplo:</p>
+    <blockquote>&lt;p id="paragrafo1" style="color: blue;"&gt;Texto azul&lt;/p&gt;</blockquote>
+    <p>Que retorna:</p>
+    <blockquote>
+      <p id="paragrafo1" style="color: blue">Texto azul</p>
+    </blockquote>
+
+    <p>Outros atributos são específicos, como:</p>
+    <ul>
+      <li>
+        <strong><mark>type</mark></strong
+        >: Usado na tag <strong><mark>&lt;input&gt;</mark></strong> para definir o tipo de campo: texto, senha, checkbox, etc;
+      </li>
+    </ul>
+    <p>Exemplo:</p>
+    <blockquote>&lt;input type="text" /&gt;</blockquote>
+    <p>Que retorna:</p>
+    <blockquote><input type="text" /></blockquote>
+    <a href="#sessoes">voltar ao topo</a>
+
+    <hr />
+
+    <h2 id="textos">Textos no HTML</h2>
+    <p>Para organizar textos usamos:</p>
+
+    <h3>Títulos</h3>
+    <p>
+      Tags de <strong><mark>&lt;h1&gt;</mark></strong> até <strong><mark>&lt;h6&gt;</mark></strong>
+    </p>
+    <ul>
+      <li>
+        <strong><mark>&lt;h1&gt;</mark></strong
+        >: Título principal;
+      </li>
+      <li>
+        <strong><mark>&lt;h2&gt;</mark></strong
+        >: Subtítulo;
+      </li>
+      <li>
+        <strong><mark>&lt;h3&gt;</mark></strong
+        >: Título de seção;
+      </li>
+      <li>
+        <strong><mark>&lt;h4&gt;</mark></strong
+        >: Título de subseção;
+      </li>
+      <li>
+        <strong><mark>&lt;h5&gt;</mark></strong
+        >: Título de sub-subseção;
+      </li>
+      <li>
+        <strong><mark>&lt;h6&gt;</mark></strong
+        >: Título de sub-sub-subseção.
+      </li>
+    </ul>
+
+    <h3>Parágrafos</h3>
+    <p>
+      Usamos a tag <strong><mark>&lt;p&gt;</mark></strong> para criar parágrafos de texto.
+    </p>
+
+    <h3>Citações</h3>
+    <p>
+      Usamos a tag <strong><mark>&lt;blockquote&gt;</mark></strong> para criar citações.
+    </p>
+
+    <h3>Destaques dentro do texto</h3>
+    <p>
+      Podemos usar dentro de um <strong><mark>&lt;p&gt;</mark></strong
+      >:
+    </p>
+    <ul>
+      <li>
+        <strong><mark>&lt;strong&gt;</mark></strong
+        >: Texto em negrito;
+      </li>
+      <li>
+        <strong><mark>&lt;em&gt;</mark></strong
+        >: Texto em itálico;
+      </li>
+      <li>
+        <strong><mark>&lt;u&gt;</mark></strong
+        >: Texto sublinhado;
+      </li>
+      <li>
+        <strong><mark>&lt;mark&gt;</mark></strong
+        >: Texto destacado com fundo amarelo;
+      </li>
+    </ul>
+    <p>Exemplo:</p>
+    <blockquote>
+      <p>
+        <em>Este</em> <u>é um</u> <mark><strong>texto</strong> destacado</mark>.
+      </p>
+    </blockquote>
+    <a href="#sessoes">voltar ao topo</a>
+
+    <hr />
+
+    <h2 id="listas">Listas Ordenadas e Não Ordenadas</h2>
+    <p>HTML possui dois tipos principais de listas:</p>
+
+    <h3>Lista Ordenada (numerada)</h3>
+    <p>
+      Usamos a tag <strong><mark>&lt;ol&gt;</mark></strong> para criar uma lista ordenada, onde os itens são numerados automaticamente.
+    </p>
+
+    <h3>Lista Não Ordenada (com marcadores)</h3>
+    <p>
+      Usamos a tag <strong><mark>&lt;ul&gt;</mark></strong> para criar uma lista não ordenada, onde os itens são marcados com bullets (pontos).
+    </p>
+
+    <p>
+      Em ambos os tipos de listas, cada item é definido com a tag
+      <strong><mark>&lt;li&gt;</mark></strong
+      >.
+    </p>
+    <p>
+      Também é possível criar sublistas, colocando uma <strong><mark>&lt;ol&gt;</mark></strong> ou <strong><mark>&lt;ul&gt;</mark></strong> dentro de um <strong><mark>&lt;li&gt;</mark></strong
+      >.
+    </p>
+    <a href="#sessoes">voltar ao topo</a>
+
+    <hr />
+
+    <h2 id="links">Links</h2>
+    <p>
+      Os links são definidos pela tag <strong><mark>&lt;a&gt;</mark></strong
+      >.
+    </p>
+    <p>Exemplo:</p>
+    <blockquote>&lt;a href="https://www.dio.me"&gt;Link para a DIO&lt;/a&gt;</blockquote>
+    <p>Que retorna:</p>
+    <blockquote><a href="https://www.dio.me">Link para a DIO</a></blockquote>
+
+    <p>Principais atributos:</p>
+    <ul>
+      <li>
+        <strong><mark>href</mark></strong
+        >: Define o destino do link;
+      </li>
+      <li>
+        <strong><mark>target</mark></strong
+        >: Define onde o link será aberto;
+      </li>
+      <li>
+        <strong><mark>title</mark></strong
+        >: Define um título para o link.
+      </li>
+    </ul>
+
+    <p>
+      Valores comuns de <strong><mark>target</mark></strong
+      >:
+    </p>
+    <ul>
+      <li>
+        <strong><mark>_blank</mark></strong
+        >: Abre o link em uma nova aba;
+      </li>
+      <li>
+        <strong><mark>_self</mark></strong
+        >: Abre o link na mesma aba (padrão);
+      </li>
+      <li>
+        <strong><mark>_parent</mark></strong
+        >: Abre o link na janela pai;
+      </li>
+      <li>
+        <strong><mark>_top</mark></strong
+        >: Abre o link na janela principal.
+      </li>
+    </ul>
+
+    <p>Boa prática:</p>
+    <ul>
+      <li>
+        Links externos devem usar: <strong><mark>_blank</mark></strong
+        >;
+      </li>
+      <li>
+        Links internos devem usar: <strong><mark>_self</mark></strong
+        >.
+      </li>
+    </ul>
+
+    <a href="#sessoes">voltar ao topo</a>
+
+    <hr />
+
+    <h2 id="extras">Extras do Desafio (tags que faltavam)</h2>
+    <p>Essa seção existe só para eu garantir o uso de todas as tags pedidas no desafio, com exemplos curtos e fáceis de conferir.</p>
+
+    <h4>Exemplo de título com &lt;h4&gt;</h4>
+    <h5>Exemplo de título com &lt;h5&gt;</h5>
+    <h6>Exemplo de título com &lt;h6&gt;</h6>
+
+    <p>Texto com <small>&lt;small&gt;small&lt;/small&gt;</small> para observações menores.</p>
+
+    <p>
+      Exemplo de potência: 2<sup>3</sup> = 8 (usei <strong>&lt;sup&gt;</strong>).
+      <br />
+      Exemplo químico: H<sub>2</sub>O (usei <strong>&lt;sub&gt;</strong>).
+    </p>
+
+    <p>Exemplo de texto removido: <del>Este trecho foi substituído</del> (usei <strong>&lt;del&gt;</strong>).</p>
+
+    <p>
+      Exemplo com abreviação:
+      <abbr title="HyperText Markup Language">HTML</abbr>
+      (passe o mouse em cima). (usei <strong>&lt;abbr&gt;</strong>)
+    </p>
+
+    <p>Exemplo com a tag <strong>&lt;font&gt;</strong> (obs.: é obsoleta no HTML moderno, mas o desafio pediu): <font color="blue">texto azul com &lt;font color="blue"&gt;</font>.</p>
+
+    <a href="#sessoes">voltar ao topo</a>
+
+    <hr />
+
+    <br /><br />
+    <a href="sobre.html">Sobre</a>
+  </body>
+</html>
